@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+<meta charset="utf-8" />
+<title>sirius admin</title>
+<meta name="description" content="sirius admin 织梦后台，泊头市思睿网络服务有限公司 思睿团队 版权所有，测试通过织梦V57_UTF8_SP1">
+<link rel="stylesheet" href="//cdn.sirius7.cn/AmazeUI-2.5.0/assets/css/amazeui.min.css" />
+<link rel="stylesheet" href="//cdn.sirius7.cn/AmazeUI-2.5.0/assets/css/admin.css" />
+<style>.am-padding{padding:1rem;}.am-text-gray{color:#aaa;padding-right:20px;}</style>
+</head>
+<body>
+<header class="am-topbar admin-header">
+<div class="am-topbar-brand">
+<strong>sirius</strong>
+<small>网站后台管理 <span class="am-badge">v0.1.0-alpha</span></small>
+</div>
+<div class="am-collapse am-topbar-collapse" id="topbar-collapse">
+<ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list">
+<li class="am-hide-sm-only">
+<a href="#"  data-am-modal="{target: '#my-alert'}">初次使用？请先阅读：<span class="am-icon-battery-full am-text-danger"></span> <span class="admin-fullText am-text-danger">新手指引</span></a></li>
+<li class="am-hide-sm-only"><a href="/" target="_blank"><span class="am-icon-home"></span> <span class="admin-fullText">网站主页</span></a></li>
+
+<div class="am-modal am-modal-alert" tabindex="-1" id="my-alert">
+<div class="am-modal-dialog">
+<div class="am-modal-hd">sirius 网站后台管理 v0.1.0-alpha 功能介绍</div>
+<div class="am-modal-bd am-text-left">
+<p>也许你初次来到这里的时候可能会有些不适应。如果你肯花30秒的时间来熟悉这个页面，那么以后你操作后台的工作效率至少会提升100%倍。</p>
+<ul>
+<li>进入后台直接输入 sirius 可以少输入一个数字</li>
+<li>后台构造全面优化，常用功能，一览无余</li>
+<li>左侧按钮全部删除，替换为返回后台首页的按钮（如需使用左侧功能也不必切换为原版后台，可以直接点击左上角的 功能地图）</li>
+<li>绝对不会影响你的使用习惯（因为全部是按照默认的后台顺序排列）</li>
+<li>如有哪个网站需要此后台，可以直接上传 sirius 文件夹即可一劳永逸</li>
+<li>一键更新网站，默认选中更新所有，并且会立即更新（真正的一键更新来了！）。（拥有同样功能的还有，更新主页HTML）<br>顺便说一句，更新栏目HTML，和更新文档HTML，没有加入此功能，原因是这两个栏目多数的应用场景应该是需要选择特定分类进行更新</li>
+<li>增加友情链接，默认增加到首页</li>
+<li>数据库备份/还原 页面，提交的按钮已上移（无需下拉页面，去找那个提交按钮了）</li>
+<li>不影响使用原版后台，原版后台直接输入 /sirius7 可以进入原版后台，想用此后台，在域名后面输入 /sirius</li>
+</ul>
+</div>
+<div class="am-modal-footer">
+<span class="am-modal-btn">确定</span>
+</div>
+</div>
+</div>
+
+</ul>
+</div>
+</header>
+<div class="am-cf admin-main">
+<!-- content start -->
+<div class="admin-content">
+<div class="am-cf am-padding">
+<div class="am-fl am-cf">
+<strong class="am-text-lg">常用</strong>/<small>一些常用功能</small>
+</div>
+</div>
+<ul class="am-avg-sm-1 am-avg-md-8 am-margin am-padding am-text-center admin-content-list ">
+<li><a href="catalog_main.php" class="am-text-primary"><span class="am-icon-btn am-icon-book"></span><br />网站栏目管理</a></li>
+<li><a href="makehtml_all.php" class="am-text-primary"><span class="am-icon-btn am-icon-check-circle"></span><br />一键更新网站</a></li>
+<li><a href="sys_data.php" class="am-text-primary"><span class="am-icon-btn am-icon-server"></span><br />数据库备份/还原</a></li>
+<li><a href="sys_info.php" class="am-text-primary"><span class="am-icon-btn am-icon-cogs"></span><br />系统基本参数</a></li>
+<li><a href="file_manage_main.php" class="am-text-primary"><span class="am-icon-btn am-icon-file-archive-o"></span><br />文件管理器</a></li>
+<li><a href="templets_main.php" class="am-text-primary"><span class="am-icon-btn am-icon-star"></span><br />默认模板管理</a></li>
+</ul>
+</div>
+<!-- content stop -->
+<!-- content start -->
+<div class="admin-content">
+<div class="am-cf am-padding">
+<div class="am-fl am-cf">
+<strong class="am-text-lg">内容</strong>
+</div>
+</div>
+<ul class="am-avg-sm-1 am-avg-md-8 am-margin am-padding am-text-center admin-content-list ">
+<li><a href="catalog_main.php" class="am-text-primary"><span class="am-icon-btn am-icon-book"></span><br />网站栏目管理</a></li>
+<li><a href="content_list.php" class="am-text-primary"><span class="am-icon-btn am-icon-file-text"></span><br />所有档案列表</a></li>
+<li><a href="recycling.php" class="am-text-primary"><span class="am-icon-btn am-icon-user-md"></span><br />内容回收站</a></li>
+</ul>
+</div>
+<!-- content stop -->
+<!-- content start -->
+<div class="admin-content">
+<div class="am-cf am-padding">
+<div class="am-fl am-cf">
+<strong class="am-text-lg">模块</strong>
+</div>
+</div>
+<ul class="am-avg-sm-1 am-avg-md-8 am-margin am-padding am-text-center admin-content-list ">
+<li><a href="file_manage_main.php" class="am-text-primary"><span class="am-icon-btn am-icon-file-archive-o"></span><br />文件管理器</a></li>
+<li><a href="ad_main.php" class="am-text-primary"><span class="am-icon-btn am-icon-buysellads"></span><br />广告管理</a></li>
+<li><a href="friendlink_main.php" class="am-text-primary"><span class="am-icon-btn am-icon-link"></span><br />友情链接</a></li>
+</ul>
+</div>
+<!-- content stop -->
+<!-- content start -->
+<div class="admin-content">
+<div class="am-cf am-padding">
+<div class="am-fl am-cf">
+<strong class="am-text-lg">生成</strong>
+</div>
+</div>
+<ul class="am-avg-sm-1 am-avg-md-8 am-margin am-padding am-text-center admin-content-list ">
+<li><a href="makehtml_all.php" class="am-text-primary"><span class="am-icon-btn am-icon-check-circle"></span><br />一键更新网站</a></li>
+<li><a href="sys_cache_up.php" class="am-text-primary"><span class="am-icon-btn am-icon-bullseye"></span><br />更新系统缓存</a></li>
+<li><a href="makehtml_homepage.php" class="am-text-primary"><span class="am-icon-btn am-icon-check"></span><br />更新主页HTML</a></li>
+<li><a href="makehtml_list.php" class="am-text-primary"><span class="am-icon-btn am-icon-list-ul"></span><br />更新栏目HTML</a></li>
+<li><a href="makehtml_archives.php" class="am-text-primary"><span class="am-icon-btn am-icon-list-alt"></span><br />更新文档HTML</a></li>
+<li><a href="makehtml_tag.php" class="am-text-primary"><span class="am-icon-btn am-icon-tags"></span><br />更新TAG静态</a></li>
+</ul>
+</div>
+<!-- content stop -->
+<!-- content start -->
+<div class="admin-content">
+<div class="am-cf am-padding">
+<div class="am-fl am-cf">
+<strong class="am-text-lg">模板</strong>
+</div>
+</div>
+<ul class="am-avg-sm-1 am-avg-md-8 am-margin am-padding am-text-center admin-content-list ">
+<li><a href="templets_main.php" class="am-text-primary"><span class="am-icon-btn am-icon-star"></span><br />默认模板管理</a></li>
+</ul>
+</div>
+<!-- content stop -->
+<!-- content start -->
+<div class="admin-content">
+<div class="am-cf am-padding">
+<div class="am-fl am-cf">
+<strong class="am-text-lg">系统</strong>
+</div>
+</div>
+<ul class="am-avg-sm-1 am-avg-md-8 am-margin am-padding am-text-center admin-content-list ">
+<li><a href="sys_info.php" class="am-text-primary"><span class="am-icon-btn am-icon-cogs"></span><br />系统基本参数</a></li>
+<li><a href="sys_safe.php" class="am-text-primary"><span class="am-icon-btn am-icon-road"></span><br />验证安全设置</a></li>
+<li><a href="sys_info_mark.php" class="am-text-primary"><span class="am-icon-btn am-icon-image"></span><br />图片水印设置</a></li>
+<li><a href="sys_data.php" class="am-text-primary"><span class="am-icon-btn am-icon-server"></span><br />数据库备份/还原</a></li>
+<li><a href="sys_data_revert.php" class="am-text-primary"><span class="am-icon-btn am-icon-tasks"></span><br />数据库还原</a></li>
+</ul>
+</div>
+<!-- content stop -->
+</div>
+<footer>
+<small>&copy; 泊头市思睿网络服务有限公司 思睿团队 版权所有</small>
+</footer>
+<script src="//cdn.sirius7.cn/AmazeUI-2.5.0/assets/js/jquery.min.js"></script>
+<script src="//cdn.sirius7.cn/AmazeUI-2.5.0/assets/js/amazeui.min.js"></script>
+<script>$(".admin-content a").click(function(){var $btn=$(this);$btn.button("loading");setTimeout(function(){$btn.button("reset")},5000)});</script>
+</body>
+</html>

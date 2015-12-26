@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="思睿前端团队">
+<title><?php echo $cfg_webname; ?> - 后台登录 - 泊头市思睿网络服务有限公司</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="renderer" content="webkit">
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<link rel="stylesheet" href="//cdn.sirius7.cn/AmazeUI-2.4.2/assets/css/amazeui.min.css"/>
+<link rel="stylesheet" href="//cdn.sirius7.cn/templets/flow-assets/css/flow.min.css">
+</head>
+<body>
+<div class="xf-g am-animation-slide-top">
+<div class="header">
+<div class="am-g">
+<div class="logo"></div>
+<h1>思睿赛文企业站后台登录入口</h1>
+<p><?php echo $cfg_webname; ?> </p>
+</div>
+</div>
+<div class="am-g">
+<div class="am-u-sm-centered">
+<form name="form1" method="post" action="login.php" class="am-form am-form-horizontal">
+<input type="hidden" name="gotopage" value="<?php if(!empty($gotopage)) echo RemoveXSS($gotopage);?>" />
+<input type="hidden" name="dopost" value="login" />
+<input name='adminstyle' type='hidden' value='newdedecms' />
+<div class="am-form-group am-form-icon">
+<i class="am-icon-user"></i>
+<input type="text" class="am-form-field" name="userid" placeholder="用户名" value="admin" />
+</div>
+<div class="am-form-group am-form-icon">
+<i class="am-icon-key"></i>
+<input type="password" class="am-form-field" name="pwd" placeholder="密码" value="" autofocus="autofocus">
+</div>
+<?php
+if(preg_match("/6/",$safe_gdopen))
+{
+?>
+<div class="am-form-group am-form-icon">
+<i class="am-icon-cc"></i>
+<input class="am-form-field" id="vdcode" type="text" name="validate"  placeholder="验证码" />
+</div>
+<img class="am-btn am-btn-xl" onClick="this.src=this.src+'?'" alt="看不清？点击更换" title="看不清？点击更换" src="../include/vdimgck.php"/>
+<?php
+}
+?>
+<hr>
+<div class="am-cf">
+<input type="submit" name="sm1" title="登 录 (Enter 快速登录)"  value="登 录" class="am-btn am-btn-primary  am-btn-lg am-btn-block" onclick="this.form.submit();">
+</div>
+</form>
+<!--
+<hr>
+<p class="fz14">
+© 泊头市思睿网络服务有限公司<br>
+<a href="../" title="返回网站主页 ^_^?" class="am-btn am-btn-default btn-loading-example am-btn-sm am-fr">返回网站主页 ^_^?</a></p>
+-->
+</div>
+</div>
+</div>
+</body>
+</html>
