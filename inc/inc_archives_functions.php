@@ -116,7 +116,9 @@ function GetCurContent($body)
     $img_array = array();
     preg_match_all("/src=[\"|'|\s]{0,}(http:\/\/([^>]*)\.(gif|jpg|png))/isU",$body,$img_array);
     $img_array = array_unique($img_array[1]);
-    $imgUrl = $cfg_uploaddir.'/'.MyDate("ymd", time());
+    //修改DEDECMS默认的远程图片的下载保存路径
+	//$imgUrl = $cfg_uploaddir.'/'.MyDate("ymd", time());
+	$imgUrl = '/image';
     $imgPath = $cfg_basedir.$imgUrl;
     if(!is_dir($imgPath.'/'))
     {
