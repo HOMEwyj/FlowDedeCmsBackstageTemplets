@@ -120,23 +120,23 @@ a.mm:hover div {
 <table width="180" align="left" border='0' cellspacing='0' cellpadding='0' style="text-align:left;">
   <tr>
     <td valign='top' style='padding-top:10px' width='20'><a id='link1' class='mmac'>
-      <div onmouseover="ShowMainMenu(1)">核心</div>
+      <div onClick="ShowMainMenu(1)">核心</div>
       </a> <a id='link100' class='mm'>
-      <div onmouseover="ShowMainMenu(100)">模块</div>
+      <div onClick="ShowMainMenu(100)">模块</div>
       </a> <a id='link5' class='mm'>
-      <div onmouseover="ShowMainMenu(5)">生成</div>
+      <div onClick="ShowMainMenu(5)">生成</div>
       </a> <a id='link3' class='mm'>
-      <div onmouseover="ShowMainMenu(3)">采集</div>
+      <div onClick="ShowMainMenu(3)">采集</div>
       </a> <a id='link6' class='mm'>
-      <div onmouseover="ShowMainMenu(6)">会员</div>
+      <div onClick="ShowMainMenu(6)">会员</div>
       </a>
       <?php
   	if($cuserLogin->getUserType() >= 10) {
   	?>
       <a id='link7' class='mm'>
-      <div onmouseover="ShowMainMenu(7)">模板</div>
+      <div onClick="ShowMainMenu(7)">模板</div>
       </a> <a id='link10' class='mm'>
-      <div onmouseover="ShowMainMenu(10)">系统</div>
+      <div onClick="ShowMainMenu(10)">系统</div>
       </a>
       <?php
   	}

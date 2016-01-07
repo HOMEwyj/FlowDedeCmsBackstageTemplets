@@ -4,6 +4,16 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=<?php echo $cfg_soft_lang; ?>">
 <title><?php echo $cfg_webname; ?>-<?php echo $cfg_softname." ".$cfg_version; ?></title>
+<!--sirius-->
+<style>
+.top_logo{color:#eee;font-size:18px;padding-left:20px;padding-top:8px;}
+.top_logo img{display:none;}
+.top{background:#639709;}
+.top .top_link ul li.welcome{color:#ccc;}
+.top .top_link ul li a{color:#ccc;}
+.topnav{background:#333;}
+</style>
+<!--sirius-->
 <link href="css/frame.css" rel="stylesheet" type="text/css" />
 <script src="../include/js/jquery/jquery.js" language="javascript" type="text/javascript"></script>
 <script src="js/frame.js" language="javascript" type="text/javascript"></script>
@@ -53,7 +63,6 @@
 #s4 div.sel {
     background: url("images/skinbutton.png") no-repeat scroll -14px -33px transparent;
 }
-.top{background:url(images/admin_top_bg.jpg) left top repeat-x;}
 </style>
 </head>
 <body class="showmenu">
@@ -69,10 +78,10 @@
 </div>
 <div class="head">
   <div class="top">
-    <div class="top_logo"> <img src="images/style<?php echo $cfg_admin_skin;?>/admin_top_logo.gif" width="200" height="37" alt="DedeCms Logo" title="Welcome use DedeCms" id="topdedelogo" /> </div>
+    <div class="top_logo">思睿网络后台管理<img src="images/style<?php echo $cfg_admin_skin;?>/admin_top_logo.gif" width="200" height="37" alt="DedeCms Logo" title="Welcome use DedeCms" id="topdedelogo" /> </div>
     <div class="top_link">
       <ul>
-        <li class="welcome">您好：<?php echo $cuserLogin->getUserName(); ?> ，欢迎使用DedeCMS！</li>
+        <li class="welcome">您好：<?php echo $cuserLogin->getUserName(); ?>！</li>
         <li><a href="index_menu.php" target="menu">主菜单</a></li>
         <li><a href="#" onclick="JumpFrame('catalog_menu.php','public_guide.php');">内容发布</a></li>
         <li><a href="#" onclick="JumpFrame('index_menu.php','content_list.php');">内容维护</a></li>
@@ -124,11 +133,20 @@
     </div>
   </div>
 </div>
+<a href="">
 <div class="left">
-  <div class="menu" id="menu">
+<style>
+.left .col-left{color:#999;position:absolute;top:10%;left:35%;width:18px;font-size:18px;margin:auto 0;line-height:1.5em;border:1px solid #ddd;padding:40px 25px;transition:all 100ms ease-in;}
+.left:hover .col-left{border:1px solid #ccc;color:#888;}
+</style>
+<div class="col-left">
+点击这里的任何地方来返回后台首页
+ </div>
+  <div style="height:0;width:0;" class="menu" id="menu">
     <iframe src="index_menu.php" id="menufra" name="menu" frameborder="0"></iframe>
   </div>
 </div>
+</a>
 <div class="right">
   <div class="main">
     <iframe id="main" name="main" frameborder="0" src="index_body.php"></iframe>
