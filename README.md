@@ -29,3 +29,6 @@ http://*.**.**/dede/
 
 ##改动内容
 *只改动了 /dede/templets/ 文件夹内的模板文件。其他是原版织梦 V57_UTF8_SP1 里面的文件。
+
+##后台演示地址：（感受一下它的易用性）
+* http://demo.flow.dxf.me/sirius/ （用户名：guest，密码：guest ）
